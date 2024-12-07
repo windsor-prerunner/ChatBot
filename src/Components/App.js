@@ -10,7 +10,6 @@ function App () {
 
   /**
    * @description update the state for both user and bot
-   * @returns {Promise<void>}
    */
   const handleSend = async () => {
     const userMessage = { sender: 'user', text: input };
