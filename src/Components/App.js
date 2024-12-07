@@ -7,6 +7,11 @@ import ErrorBoundary from './ErrorHandling/ErrorBoundry';
 function App () {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
+
+  /**
+   * @description update the state for both user and bot
+   * @returns {Promise<void>}
+   */
   const handleSend = async () => {
     const userMessage = { sender: 'user', text: input };
     setMessages([...messages, userMessage]);
