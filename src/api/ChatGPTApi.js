@@ -19,7 +19,7 @@ export const getBotResponse = async ( message, options) => {
 
     if (response.ok) {
       const data = await response.json();
-      console.log('DTAT',data);
+      console.log('DATA',data);
       return data.choices[0]?.message?.content.trim() || '';
     } else {
       const errorData = await response.json();

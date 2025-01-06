@@ -12,7 +12,6 @@ const baseOptions = {
   max_tokens: 150,
   stop: ['\n']
 };
-
 /**
  * @description Temperature: This parameter affects the randomness of the model's output.
  * A lower temperature (e.g., 0.2) makes the model's responses more focused and deterministic,
@@ -69,4 +68,3 @@ const optionsConfig = {
 };
 
 export default optionsConfig
-
